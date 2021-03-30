@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+html,
+body {
+   overflow-x: hidden;
+}
+
+LI {
+    list-style: none;
+}
+
+A{
+    text-decoration: none;
+    color: #000;
+}
+
+H1[class^=title]{
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+H3[class^=title]{
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+H4[class^=title]{
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+P[class^=text]{
+    line-height: 30px;
+}
+
+BUTTON {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    outline: 0;
+}
+
+.eclipse {
+    width: 100%;
+    height: 100%;
+    background-color: #030508;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.content-block {
+    width: 100%;
+    height: 100%;
+    max-width: 1170px;
+    padding: 0 30px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.button {
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all ease 0.4s;
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    overflow: hidden;
+    position: relative;
+}
+
+.button:active {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.button__icon {
+    margin-right: 10px;
+}
+
+.button__decoration {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    opacity: 0.4;
+    z-index: 0;
+    transition: all ease 0.8s;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    -ms-transition: all ease 0.8s;
+    -o-transition: all ease 0.8s;
+}
+.button:hover
+.button__decoration{
+    width: 100%;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+
+.custom-list-style {
+    padding-left: 20px;
+    position: relative;
+}
+
+.custom-list-style::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #1ea000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+}
+
+
+/**Ready Templates**/
+
+.button__type1 {
+    background-color: #ffb215;
+    color: #fff;
+}
+
+.button__type1 > .button__decoration {
+    background-color: #ffb215;
+}
+
+.button__type1:hover {
+    box-shadow: #ffb215 0 0 10px 0.1px;
+}
+
+.button__type2 {
+    background-color: #fff;
+    color: #000;
+}
+
+.button__type2 > .button__decoration {
+    background-color: #fff;
+}
+
+
+.button__type2:hover {
+    box-shadow: #fff 0 0 10px 0.1px;
+}
+
+.button__type3 {
+    border: 2px solid #ffb215;
+    padding: 5px 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button__type3:hover {
+    box-shadow: 0 0 5px 1px #ffb1157c;
+}
+
+.main__item {
+    width: 350px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 13px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 876px){
+    H1[class^=title]{
+        font-size: 24px;
+    }
+    
+    H3[class^=title]{
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 543px){
+    .content-block {
+        padding: 0 10px;
+    }
+}

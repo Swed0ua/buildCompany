@@ -1,0 +1,8 @@
+.footer {
+    padding: 20px 0;
+}
+
+.footer__contacts {
+    margin: 35px 0;
+    display: flex;
+}

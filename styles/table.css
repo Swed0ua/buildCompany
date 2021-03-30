@@ -1,0 +1,133 @@
+.table__wrapper {
+    width: 100%;
+    overflow: auto;
+}
+
+table {
+    border-collapse: inherit;
+    border-spacing: 0px 10px; 
+     padding: 10px;  
+     background-color: #f5f3f1;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    min-width: 100%;
+}
+
+tr {
+    margin-bottom: 20px;
+    
+}
+
+
+td, th {
+    padding: 10px 20px; 
+    text-align: center;
+}
+
+td{
+    background-color: #fff;
+    border-top: dotted red 1px;
+    border-bottom: dotted red 1px;
+}
+
+table td:first-child {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-left: dotted red 1px;
+}
+
+table td:last-child {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right: dotted red 1px;
+}
+
+td:first-child, th:first-child {
+    text-align: left;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+th {
+    color: #9b9a9a;
+}
+
+table input {
+    height: 25px;
+    width: 25px;
+}
+
+table input[type="number"] {
+    width: 60px;
+}
+
+table input {
+    height: 25px;
+    border: #dddddd 2px solid;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.ap::before {
+    content: "+ ";
+}
+
+.table__info {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.table__button-Wrapper {
+    flex-grow: 1;
+}
+
+.table__total-style {
+    margin-right: 100px;
+}
+
+.table__button-submit-Wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-submit {
+    padding: 20px 50px;
+}
+
+
+/* MEDIA QURIES */
+
+@media screen and (max-width: 800px){
+    .table__total-style {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .table__info {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .table__total-style {
+        margin: 0 10px ;
+    }
+
+    .table__button {
+        margin: 15px 0;
+    }
+
+    .button-submit {
+        width: 100%;
+    }
+}
